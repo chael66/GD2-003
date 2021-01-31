@@ -1,16 +1,23 @@
-
-
 body{
-	color: white; background: black; width: 20000px; height :1000px; 
+    background-image: url('https://media4.giphy.com/media/9bTjZrytydVRK/giphy.gif?cid=ecf05e477lgen9ss7pna0r7w17agwobia2af5pku3k0evkjg&rid=giphy.gif');
+    background-size: cover;
+    
+    
+    width: 100000px;
+    height: 1000px;
+
+	color: white; 
 
 }
 
 h1{
 	font-size: 90px;  font-family: futura; text-align: left; word-spacing: 50px;
 
+img {
+}
 
-.sun {
-	width:60%;
+.sun{
+	width:120px; height:120px;
 }
 
 .mercury{
