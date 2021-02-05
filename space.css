@@ -11,17 +11,15 @@ body{
 }
 
 h1{
-	font-size: 90px;  font-family: futura; text-align: left; word-spacing: 50px;
+	font-size: 90px;  font-family: futura; text-align: left; word-spacing: 50px;}
 
-img {
-}
 
-.sun{
-	width:120px; height:120px;
+img.sun{
+	width:3%
 }
 
 .mercury{
-	width: 30% ;
+	 ;
 }
 
 

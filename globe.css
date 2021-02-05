@@ -1,0 +1,188 @@
+
+
+body {
+    background: black;
+    justify-content: center;
+    place-items: center;
+    margin: 0px;
+    
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: futura;
+    color: white;
+    text-align: center;
+
+}
+
+
+
+
+
+.circle {
+    width : 300px; 
+    height : 300px;
+    border-radius: 50%;
+    background :rgb(100, 149, 237);
+    position: absolute;
+
+    
+   
+    
+}
+
+
+    .maps1{
+    /* south */
+        content:"";
+        position: absolute;
+        width: 123px;
+        height: 117px;
+        top: 167px;
+        left: 166px;
+        background-color: green;
+        transform: rotate(7deg);
+
+        clip-path: polygon(19% 5%, 14% 12%, 12% 20%, 13% 30%, 21% 38%, 27% 38%, 39% 42%, 46% 40%, 48% 52%, 51% 54%, 51% 59%, 53% 66%, 56% 73%, 54% 84%, 56% 84%, 46% 93%, 51% 93%, 59% 83%, 62% 81%, 66% 67%, 72% 57%, 77% 43%, 82% 34%, 87% 22%, 86% 8%, 89% 1%, 79% 1%, 77% 4%, 61% -6%, 38% 2%, 26% 2%, 21% 4%)
+
+    }
+        
+    .maps2{ 
+    /* north */
+
+        content: "";
+        position: absolute;
+        width: 175px;
+        height: 161px;
+        top: 29px;
+        left: 22px;
+        background-color: green;
+        transform: rotate(-3deg);
+        clip-path: polygon(22% 2%, 19% 6%, 16% 7%, 13% 16%, 17% 19%, 31% 23%, 25% 32%, 27% 52%, 36% 78%,38% 79%, 33% 63%, 39% 70%, 43% 81%, 62% 93%, 69% 90%, 80% 101%, 99% 100%, 93% 98%, 96% 96%, 87% 96%, 78% 94%, 78% 88%, 70% 82%, 64% 82%, 59% 73%, 77% 74%, 81% 77%, 83% 76%, 81% 73%, 89% 63%, 98% 38%, 98% 30%, 97% 27%, 92% 21%, 132% 27%, 88% 12%, 76% 11%, 73% 20%, 77% 24%, 74% 31%, 72% 28%, 65% 25%, 60% 25%, 57% 21%, 66% 13%, 58% 10%, 56% 12%, 45% 10%, 40% 12%, 35% 11%, 32% 13%, 30% 4%);
+    }
+    .maps3 {
+    /*  upper1*/
+        content: "";
+        position: absolute;
+        width: 78px;
+        height: 64px;
+        top: 14px;
+        left: 95px;
+        background-color: green;
+        transform: rotate(-7deg);
+        clip-path: polygon(37% 26%, 31% 30%, 35% 45%, 43% 45%, 40% 52%, 45% 59%, 50% 52%, 49% 47%, 50% 43%, 63% 41%, 61% 49%, 77% 51%, 84% 36%, 80% 34%, 85% 32%, 82% 27%, 69% 22%, 56% 26%, 54% 23%);
+    }
+    .maps4 {
+        content: "";
+        position: absolute;
+        width: 111px;
+        height: 60px;
+        top: 6px;
+        left: 119px;
+        background-color: green;
+        transform: rotate(12deg);
+        clip-path: polygon(36% 16%, 26% 31%, 30% 36%, 40% 34%, 50% 38%, 59% 42%, 67% 43%, 67% 36%, 64% 29%, 61% 18%, 44% 8%);
+    }
+
+    .maps5{
+
+        content: "";
+        position: absolute;
+        width: 35px;
+        height: 33px;
+        top: 32px;
+        left: 92px;
+        background-color: green;
+        transform: rotate(-4deg);
+        clip-path: polygon(57% 30%, 48% 36%, 51% 42%, 58% 42%, 66% 34%, 74% 28%, 70% 23%, 59% 21%);
+    }
+    
+    .maps6{
+
+        content: "";
+        position: absolute;
+        width: 34px;
+        height: 37px;
+        top: 18px;
+        left: 95px;
+        background-color: green;
+        transform: rotate(-4deg);
+        clip-path: polygon(36% 36%, 43% 36%, 51% 44%, 51% 51%, 44% 52%, 37% 53%, 31% 46%);
+    }
+    .maps7{
+
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 26px;
+        left: 91px;
+        background-color: green;
+        transform: rotate(-4deg);
+        clip-path: polygon(36% 36%, 43% 36%, 51% 44%, 51% 51%, 44% 52%, 37% 53%, 31% 46%);
+    }
+
+    .maps8{
+
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 23px;
+        left: 93px;
+        background-color: green;
+        transform: rotate(-4deg);
+        clip-path: polygon(38% 49%, 40% 57%, 64% 48%, 63% 45%, 56% 44%, 49% 44%);
+    }
+
+    .maps9{
+
+        content: "";
+        position: absolute;
+        width: 45px;
+        height: 54px;
+        top: 18px;
+        left: 78px;
+        background-color: green;
+        transform: rotate(-4deg);
+        clip-path: polygon(38% 35%, 44% 38%, 48% 36%, 54% 38%, 63% 37%, 71% 45%, 58% 56%, 46% 57%, 48% 51%, 46% 45%, 41% 47%, 29% 45%, 34% 36%, 39% 36%);
+    }
+
+    .shadow {
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        box-shadow: inset -21px -25px 35px 5px rgb(18 23 37);
+        opacity: 0.6;
+    }
+    .shadow::before{
+        /* 반사광 */
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        box-shadow: inset -21px -25px 9px -27px rgb(220, 229, 255);
+        opacity: 0.4;
+    }
+
+    .highlight{
+        content: "";
+        position: absolute;
+        width: 300px;
+        height:300px; 
+        border-radius: 50%;
+        box-shadow: inset 24px 29px 21px -8px rgb(220, 229, 255);
+        opacity: 0.3;
+    }
+
