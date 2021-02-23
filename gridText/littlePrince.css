@@ -1,0 +1,769 @@
+
+
+body{
+    
+    background-color: black;
+}
+
+
+.container{
+    position:absolute;
+    width:75%;
+    padding:10%;
+    background-color: black 50px;
+    /* border: 3px solid white; */
+}
+.page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8{
+    margin-top: 20%;
+    margin-bottom: 40%;
+    display: block;
+    position:relative;
+    font-family: 'Indie Flower', cursive;
+    letter-spacing: 3px;
+    
+}
+.page4, .page5, .page6, .page7, .page8{
+  padding: 10%;
+}
+.texts{
+
+  color:white;
+  font-size: 17px;
+  /* text-align:left ; */
+  line-height: 40px;
+  letter-spacing: 1px;
+  
+}
+
+
+
+
+
+
+h1{
+    
+    position: relative;
+    
+    color: white;
+    font-family:'Amatic SC', cursive;
+    font-size: 120px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 3px;
+    
+}
+
+.page1 .titleContainer{
+    
+  
+  top: -220px;
+    height: 30vw;
+    width: 80;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 80%;
+    color: white;
+    opacity: 40%;
+     position:relative;
+}
+
+.titleContainer::before, .titleContainer::after
+{
+  position: absolute;
+  content : "";
+  height:80%;
+  width:90%;
+  border-radius:50%;
+  opacity:0.5;
+  filter: blur(70px);
+  
+}
+
+
+.titleContainer::after
+{
+    background-color:#00ffff;
+   z-index: -1;
+  animation : backglow2 15s ease infinite;
+}
+
+.titleContainer::before
+{
+    background-color: #ff0072;
+   z-index: -2;
+  animation : backglow1 15s ease infinite;
+}
+
+
+
+
+@keyframes backglow1
+{
+  
+  0%{
+      transform: translate(10%, 10%) scale(1);
+       opacity:0.5;
+  }
+  
+   25%
+  {
+    transform: translate(-10%, 10%) scale(0.8);
+    opacity:0.5;
+  }
+  
+   50%
+  {
+    transform: translate(-10%, -10%) scale(1.2);
+    opacity:0.8;
+  }
+  
+   75%
+  {
+    transform: translate(10%, -10%) scale(1.1);
+    opacity:0.2;
+  }
+  
+   100%
+  {
+    transform: translate(10%, 10%) scale(1);
+    opacity:0.5;
+  }
+  
+  
+}
+
+
+
+
+
+@keyframes backglow2
+{
+  
+  0%
+  {
+    transform: translate(-10%, -10%) scale(1);
+    opacity:0.5;
+  }
+  
+   25%
+  {
+    transform: translate(10%, -10%) scale(0.8);
+    opacity:0.5;
+  }
+  
+   50%
+  {
+    transform: translate(10%, 10%) scale(1.2);
+    opacity:0.8;
+  }
+  
+   75%
+  {
+    transform: translate(-10%, 10%) scale(1.1);
+    opacity:0.2;
+  }
+  
+   100%
+  {
+    transform: translate(-10%, -10%) scale(1);
+    opacity:0.5;
+  }
+  
+  
+}
+
+
+
+.page2{
+  position: relative;
+  top: 300px;
+  border: 1px dashed whitesmoke;
+  height: 30rem;
+}
+.page2> .contents  { 
+  font-family:'Amatic SC', cursive;
+  position: relative;
+  top:-400px;
+  /* padding:50px; */
+  display: block ;
+  
+ font-size: 60px;
+ color: white;
+ text-align: center;
+ justify-content: center;
+
+
+}
+  
+.page2> .chapterLists {
+  top:-340px;
+  display: block ;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  line-height:60px;
+  position: relative;
+ 
+} 
+
+
+
+
+input {
+  -webkit-appearance: none; /* remove default */
+  display: block;
+  position: absolute;
+  left: 45%;
+  margin: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  vertical-align: middle;
+
+  box-shadow: hsla(0,0%,100%,.15) 0 1px 1px, inset hsla(0,0%,0%,.5) 0 0 0 1px;
+  background-color: rgba(160, 160, 160, 0.2);
+  background-image: -webkit-radial-gradient( hsla(200,100%,90%,1) 0%, hsla(200,100%,70%,1) 15%, hsla(200,100%,60%,.3) 28%, hsla(200,100%,30%,0) 70% );
+  background-repeat: no-repeat;
+ 
+  -webkit-transition: background-position .15s cubic-bezier(.8, 0, 1, 1),
+    -webkit-transform .25s cubic-bezier(.8, 0, 1, 1);
+  outline: none;
+
+
+}
+input:checked {
+  -webkit-transition: background-position .2s .15s cubic-bezier(0, 0, .2, 1),
+    -webkit-transform .25s cubic-bezier(0, 0, .2, 1);
+}
+input:active {
+  -webkit-transform: scale(1.5);
+  -webkit-transition: -webkit-transform .1s cubic-bezier(0, 0, .2, 1);
+}
+
+
+
+/* The up/down direction logic */
+
+input,
+input:active {
+  background-position: 0 24px;
+}
+input:checked {
+  background-position: 0 0;
+}
+input:checked ~ input,
+input:checked ~ input:active {
+  background-position: 0 -24px;
+}
+
+
+
+
+
+
+
+
+
+.page3{
+  padding: 0%;
+  position: relative;
+  top: 300px;
+  /* border:3px solid whitesmoke; */
+  height: 30rem;
+}
+
+.page3> .chapter4{
+  position: relative;
+  display: block;
+  top: 20%;
+  font-size: 80px;
+  color: whitesmoke;
+  font-family:'Amatic SC', cursive;
+  font-weight: bold;
+  letter-spacing: 3px;
+  
+}
+.page3>.ch4SubTitle {
+  
+  position: relative;
+  display: block;
+  top: 30%;
+  font-size: 20px;
+  color: whitesmoke;
+  font-family:'Indie Flower', cursive;
+  font-weight: bold;
+  
+  line-height: 40px;
+  
+}
+
+
+
+
+
+.page5> .texts{
+    text-align:right;
+}
+
+.page6 > .texts {
+    text-align: left;
+
+}
+.page7> .texts{
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+  .dots {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ////////DECO/IMAGES/////// */
+
+
+
+.image1,.starLines{
+  position: absolute;
+  padding: 5%;
+}
+
+.smallStars>.smallStars1{
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: auto;
+  top: -480px;
+  left: 750px;
+}
+.smallStars>.smallStars2{
+  position: absolute;
+  display: inline-block;
+  width: 20px;
+  height: auto;
+  top: -440px;
+  left: 110px;
+
+}
+.bigStars>.bigStars1{
+  position: absolute;
+  display: block;
+  width: 40px;
+  height: auto;
+  top:-510px;
+  left: 180px;
+}
+.bigStars>.bigStars2{
+  position: absolute;
+  display: inline-block;
+
+  width: 40px;
+  height: auto;
+  top:-460px;
+  left: 830px;
+}
+
+
+
+
+.line1{
+
+  border-left: 0.7px solid rgb(255, 255, 255);
+  height: 150px;
+  position: absolute;
+  top: -620px;
+  left: 760px;
+  z-index: -10;
+
+  
+}
+.line2{
+
+  border-left: 0.7px solid rgb(255, 255, 255);
+  height: 130px;
+  position: absolute;
+  top: -560px;
+  left: 120px;
+  z-index: -10;
+  
+}
+.line3{
+
+  border-left: 0.7px solid rgb(255, 255, 255);
+  height: 110px;
+  position: absolute;
+  top:-600px;
+  left: 200px;
+  z-index: -10;
+  
+}
+
+.line4{
+
+  border-left: 0.7px solid rgb(255, 255, 255);
+  height: 100px;
+  position: absolute;
+  top:-550px;
+  left: 850px;
+  z-index: -10;
+}
+
+
+
+
+
+/* ///////////////////// */
+
+.image2{
+  position: absolute;
+  padding: 5%;
+  top:1180px;
+  left: 390px;
+  /* display: block; */
+}
+.image2>.prince2{
+  position:relative;
+  display: block;
+  width: 500px;
+  height: auto;
+  left:120px;
+  top:-650px;
+  z-index: 10;
+}
+.image2>.planet{
+  position:relative;
+  display: block;
+  width: 600px;
+  top:-1300px;
+  height: auto;
+  /* top: 100px; */
+  z-index: 5;
+  
+}
+
+
+/* //////////////////// */
+
+
+
+
+
+
+
+
+.image3{
+  position: absolute;
+  padding: 5%;
+  /* top:870px; */
+  justify-content: center;
+  width: 75%;
+  height:500px;
+  overflow: hidden;
+
+}
+
+.image3>.man1{
+  position:absolute;
+  display: inline-block;
+  width: 300px;
+  height: auto;
+  left:10%;
+  top: 200px;
+  
+}
+
+
+.image3>.man2{
+  position:absolute;
+  display: inline-block;
+  width: 320px;
+  height: auto;
+  left:52% ;
+  top: 200px;
+ 
+ 
+}
+
+
+
+
+/* //////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+.image4{
+  position: absolute;
+  padding: 5%;
+  /* top:870px; */
+
+}
+
+.image4>.b612{
+  position:absolute;
+  display: block;
+  width: 220px;
+  height: auto;
+  left:-120px ;
+  top:-790px;
+  z-index: -100;
+}
+
+/* //////////////////// */
+
+
+
+
+
+.image5{
+  position: absolute;
+  /* padding: 5%; */
+  /* top:870px; */
+
+}
+.image5>.prince{
+  position:absolute;
+  display: block;
+  width: 630px;
+  height: auto;
+  left: 280px;
+  top: -180px;
+/* flipping */
+  transform:rotate(90deg);
+  -moz-transform: scaleX(-1); 
+   -o-transform: scaleX(-1); 
+  -webkit-transform: scaleX(-1); 
+  transform: scaleX(-1);   
+  filter: FlipH;
+ -ms-filter: "FlipH";
+}
+
+
+
+
+
+
+
+/* //////////////////// */
+
+
+
+
+
+
+ .backGroundLines> .line5, .line6, .line7, .line8, .line9, .line10, .line11, .line12 {
+  /* position: fixed; */
+  position: relative;
+  /* border-left: 0.1px solid rgb(255, 255, 255); */
+
+} 
+
+
+
+
+  .backGroundLines> .line5{
+    border-left: 0.7px solid rgb(255, 255, 255);
+    height: 1000px;
+    position: absolute;
+    top: 930px;
+    left: 20px;
+
+
+
+  }
+
+
+  .backGroundLines>.line6{
+    border-left: 0.7px solid rgb(255, 255, 255);
+    height: 1000px;
+    position: absolute;
+    top: 1290px;
+    left: 80px;
+   
+
+  }
+
+
+  .backGroundLines>.line7{
+    border-left: 0.7px solid rgb(255, 255, 255);
+    height: 1000px;
+    position: absolute;
+    top: 1100px;
+    left: 100px;
+    
+
+
+  }
+
+
+/* 
+  .backGroundLines>.line8{
+    border-left: 0.7px solid rgb(255, 255, 255);
+    height: 1000px;
+    position: absolute;
+    top: 1100px;
+    left: 300px;
+    z-index: -10;
+
+
+  }
+
+
+
+  .backGroundLines>.line9{
+    border-left: 0.7px solid rgb(255, 255, 255);
+    height: 1000px;
+    position: absolute;
+    top: 1100px;
+    left: 500px;
+    z-index: -10;
+
+
+  }
+
+
+  .backGroundLines>.line10{
+    border-left: 0.7px solid rgb(255, 255, 255);
+    height: 1000px;
+    position: absolute;
+    top: 1100px;
+    left: 600px;
+    z-index: -100;
+
+
+  }
+ */
+
+
+  .backGroundLines>.line11{
+    border-left: 0.7px solid rgb(255, 255, 255);
+    height: 1000px;
+    position: absolute;
+    top: 1244px;
+    left: 1164px;
+  
+
+
+  }
+
+
+  .backGroundLines>.line12{
+    border-left: 0.7px solid rgb(255, 255, 255);
+    height: 1000px;
+    position: absolute;
+    top: 1650px;
+    left: 1174px;
+
+
+
+  }
+
+  .backGroundLines>.line13{
+    border-left: 0.3px solid rgb(255, 255, 255);
+    height: 1000px;
+    position: absolute;
+    top: 865px;
+    left: 1280px;
+
+
+
+  }
+
+
+  .backGroundLines>.line14{
+    border-left: 0.7px solid rgb(255, 255, 255);
+    height: 1000px;
+    position: absolute;
+    top: 660px;
+    left: 1320px;
+
+
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The progress container (grey background) */
+
+.indicator{
+  
+    content: " ";
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+    
+
+} 
+.progress-container {
+    
+    width: 100%;
+    height: 8px;
+    background:black
+  }
+ 
+  /* The progress bar (scroll indicator) */
+.progress-bar {
+    
+    height: 8px;
+    background: #00ffff;
+    
+    opacity: 70%;
+  } 
+
+
+
+
+
+
+
+
+  
