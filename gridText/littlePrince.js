@@ -1,5 +1,8 @@
 
+///? ???
 
+//// class vs name 
+//// section vs article vs div
 
 // When the user scrolls the page, execute myFunction 
 
@@ -12,6 +15,12 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
+
+
+
+// jQuery(document).ready(function($));
+// $( 'html, body' ).stop().animate( { scrollTop : 100 } ) 
+
 
 
 
@@ -40,17 +49,17 @@ function myFunction() {
 //     });
   
 //   });
-var jb = $( '#ch4' ).offset()
-console.log (jb)
 
 
-jQuery(document).ready(function($) {
 
-        $("#button").click(function(event){            
-                event.preventDefault();
-                $('html,body').animate({scrollTop:$(this.hash).offset( ).top}, 500);
-        });
-});
+
+// jQuery(document).ready(function($) {
+
+//         $("#button").click(function(event){            
+//                 event.preventDefault();
+//                 $('html,body').animate({scrollTop:$(this.hash).offset( ).top}, 500);
+//         });
+// });
 
 
 
