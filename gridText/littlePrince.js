@@ -4,7 +4,9 @@
 //// class vs name 
 //// section vs article vs div
 
-// When the user scrolls the page, execute myFunction 
+//stars disspapear
+//lines are moving  down through the page
+///
 
 
 window.onscroll = function() {myFunction()};
@@ -66,4 +68,4 @@ function myFunction() {
 
 
 
-///> how to create scroll where I want 
+///> how to create > scroll down to @ (where I want 

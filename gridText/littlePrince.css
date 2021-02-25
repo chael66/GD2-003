@@ -386,7 +386,6 @@ input:hover{
 
 
 
-
 /* ////////DECO/IMAGES/////// */
 
 
@@ -632,9 +631,10 @@ input:hover{
 
 
 
- .backGroundLines> .line5, .line6, .line7, .line8, .line9, .line10, .line11, .line12 {
-  /* position: fixed; */
+ .backGroundLines> .line5, .line6, .line7, .line8, .line9, .line10, .line11, .line12, .line13,  {
+  
   position: fixed;
+  /* display: block; */
   border-left: 0.7px solid rgb(255, 255, 255);
   padding: 0;
   margin: 0;
