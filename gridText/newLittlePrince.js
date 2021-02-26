@@ -1,19 +1,3 @@
-// // SMOOTH SCROLLING SECTIONS
-// $('a[href*=#]:not([href=#])').click(function() {
-//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-//         || location.hostname == this.hostname) {
-
-//         var target = $(this.hash);
-//         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-//            if (target.length) {
-//              $('html,body').animate({
-//                  scrollTop: target.offset().top
-//             }, 1000);
-//             return false;
-//         }
-//     }
-// });
-
 
 
 
@@ -25,6 +9,46 @@ function myFunction() {
   var scrolled = (winScroll / height) * 100;
   document.getElementById("myBar").style.width = scrolled + "%";
 }
+
+
+
+$(document).ready(function() {
+ 
+  $(window).scroll( function(){
+     
+      $('.chapters').each( function(i){
+          var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+          var bottom_of_window = $(window).scrollTop() + $(window).height();
+         
+          if( bottom_of_window > bottom_of_object/2 ){
+              $(this).animate({'opacity':'1'},500);
+          }
+      }); 
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
