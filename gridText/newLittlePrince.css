@@ -769,7 +769,7 @@ p> img:hover{
 .starGroup4{
     animation:fadeIn 2s, 
              swing4 ease-in-out 2s; 
-             transform-origin: center;
+             transform-origin: 50% 0;
 }
     
 @keyframes fadeIn{
