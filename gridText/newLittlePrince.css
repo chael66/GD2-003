@@ -21,15 +21,18 @@
     font-size: 2.5vh;
     letter-spacing: 1.4vh;
     display: block;
+    z-index: 100;
 }
 
 
 .nav2{
-    text-align:right;
-    margin-left: 95.5vw;
+   text-align: left;
+    left: 96.5vw;
+    transform: scaleX(-1);
 }
 
-a {
+
+li>a {
 
 display: block;
 padding: 0;
@@ -40,7 +43,7 @@ line-height: 3.6vh;
 opacity: 70%;
 }
 
-a:hover {
+.listRight>a:hover {
 background-color: transparent;
 padding-left: 9vh;
 color:rgb(255, 211, 130);
@@ -49,6 +52,14 @@ font-size: 5vh;
 
 }
 
+.listLeft> a:hover{
+padding-left: 9vh ;
+color:rgb(255, 211, 130);
+opacity: 100%;
+font-size: 5vh;
+
+
+}
 /* a:focus {
 background-color: transparent;
 } */
@@ -71,6 +82,7 @@ body{
     color:white;
     width: 100%;
     height:auto;
+    
 
 
 }
@@ -81,15 +93,26 @@ body{
 
      margin: auto;
      text-align: center;
+     
     
 }
 
 .titlePage{
+
    background-color: black;
     height: 100vh;
     margin-bottom: 60vh;
     z-index: 1;
     /* max-width: 100vw; */
+}
+
+.chapters{
+    display: block;
+    position: relative;
+    background-color: black;
+    width: 130vh;
+    z-index: 15;
+    left: -15vh;
 }
 .chapter{
     margin-bottom: 60vh;
@@ -102,7 +125,26 @@ h1{
     font-size: 20vh;
     font-family:'Amatic SC', cursive;
     top: 40vh ;
+    color: cornsilk;
+    animation: appear ease-in-out 3s
+    
 }
+.booktitle{
+    text-decoration: none;
+}
+.booktitle:hover{
+    cursor: pointer;
+}
+@keyframes appear{
+    0% {
+        opacity: 0;
+
+    }
+    100% {
+        opacity: 100;
+    }
+}
+
 h2{ 
     font-size: 7vh;
     font-family: 'Amatic SC', cursive;
@@ -110,7 +152,7 @@ h2{
     
 }
 p{
-    text-align: left;
+    text-align: center;
     font-size:2.1vh;
     font-family: 'Indie Flower', cursive;
     line-height: 4.1vh;
@@ -118,7 +160,38 @@ p{
     word-spacing: 0.2vh;
     margin-bottom: 4.2vh;
     opacity:80%;
+    justify-content: center ;
 
+}
+
+
+
+/* -------------img0--------------------- */
+
+
+
+p> img{
+    
+    opacity: 0;
+    width: 70vh;
+   
+
+}
+p> img:hover{
+
+    opacity: 1;
+    /* width: 80vh;
+    height: auto; */
+    animation:  hover 1s ease-in-out
+}
+@keyframes hover{
+    0%{
+        opacity: 0;
+    }
+  
+    100% {
+        opacity: 1;
+    }
 }
 
 
@@ -145,6 +218,7 @@ p{
      position:relative;
     left:6vh;
     top:10vh;
+    z-index: 0;
 }
 
 
@@ -271,9 +345,7 @@ p{
 .stars{
     position:fixed;
     display: block;
-    z-index: 10;
-    
-    top:50vh;
+    top:30vh;
 
 }
 
@@ -282,61 +354,88 @@ p{
     .smallStar1{
         position: absolute;
        
-        width: 20px;
+        width: 3vh;
         height: auto;
-        top: 0vh;
-        left: 0vh;
-
+        top: 15vh;
+        left: 11vh;
+        z-index: 5;
     }
+        .smallStar1:hover{
+                
+            width: 4vh;
+            height: auto;
+            
+        }
     .smallStar2{
         position: absolute;
         
-        width: 20px;
+        width: 3vh;
         height: auto;
-        top: 0vh;
-        left: 110px;
+        top: 19vh;
+        left: 92vh;
+        z-index: 5;
 
     
     }
+        .smallStar2:hover{
+            
+            width: 4vh;
+            height: auto;
+            
+        }
     .bigStar1{
         position: absolute;
   
-        width: 40px;
+        width: 8vh;
         height: auto;
-        top:0vh;
-        left: 10vh;
+        top: 19vh;
+        left: -7vh;
+        z-index: 5;
 
     }
+        .bigStar1:hover{
+          
+            width: 9vh;
+            height: auto;
+            
+        }
     .bigStar2{
         position: absolute;
     
     
-        width: 40px;
+        width:  8vh;
         height: auto;
-        top:0vh;
-        left: 0vh;
+        top:21vh;
+        left: 105vh;
+        z-index: 5;
 
     }
-    
+        .bigStar2:hover{
+            
+            width: 9vh;
+            height: auto;
+            
+        }
 
 
 /*  */
 
-.starLines{
+/* .starLines{
     position: fixed;
     display:inline-block block;
-    top:10vh;
+    top:30vh;
 
     z-index: 5;
 
-}
+} */
     .line1{
 
         border-left: 0.7px solid rgb(255, 255, 255);
-        height: 150px;
+        height:15vh;
         position: absolute;
-        top: 0vh;
-        left: 760px;
+        top: 8vh;
+        left: -3vh;
+        z-index: 4;
         
     
         
@@ -344,20 +443,22 @@ p{
     .line2{
     
         border-left: 0.7px solid rgb(255, 255, 255);
-        height: 130px;
+        height: 15vh;
         position: absolute;
-        top: 0vh;
-        left: 120px;
+        top: 2vh;
+        left: 12.5vh;
+        z-index: 4;
 
         
     }
     .line3{
     
         border-left: 0.7px solid rgb(255, 255, 255);
-        height: 110px;
+        height: 20vh;
         position: absolute;
         top:0vh;
-        left: 200px;
+        left: 93.5vh;
+        z-index: 4;
 
         
     }
@@ -365,35 +466,352 @@ p{
     .line4{
     
         border-left: 0.7px solid rgb(255, 255, 255);
-        height: 100px;
+        height: 10vh;
         position: absolute;
-        top:0vh;
-        left: 850px;
+        top:12vh;
+        left:109vh;
+        z-index: 4;
 
     }
     
 
 
 
+
+
+
+
+
+
+
+ .backGroundLines> .line5, .line6, .line7, .line8, .line9, .line10, .line11, .line12, .line13, .line14, .line15, .line16
+  {
+  
+    
+    /* display: block; */
+    /* border-left: 0.7px solid rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+   */
+    overflow: hidden;
+    opacity: 0.5;
+    z-index: 2;
+    animation: changes ease-in-out 7s infinite
+ 
+ 
+  
+  } 
+  @keyframes changes{
+
+    0% {opacity: 1;}
+    30%{opacity: 0;}
+    50%{opacity: 1;}
+    75%{opacity: 0;}
+    100%{opacity: 1;}
+  }
+  
+  
+  
+  
+    .backGroundLines> .line5{
+      border-left: 0.7px solid rgb(255, 255, 255);
+      height: 100vh;
+      position: absolute;
+      top: 110vh;
+      left: 15vh;
+  
+  
+
+    }
+  
+  
+    .backGroundLines>.line6{
+      border-left: 0.7px solid rgb(255, 255, 255);
+      height: 120vh;
+      position: absolute;
+      top: 100vh;
+      left: 12vh;
+     
+  
+    }
+  
+  
+    .backGroundLines>.line7{
+      border-left: 0.7px solid rgb(255, 255, 255);
+      height: 100vh;
+      position: absolute;
+      top: 130vh;
+      left: 21vh;
+      
+  
+  
+    }
+
+    .backGroundLines>.line8{
+        border-left: 0.7px solid rgb(255, 255, 255);
+        height: 130vh;
+        position: absolute;
+        top: 120vh;
+        left: 32.4vh;
+        z-index: -2;
+       
+    
+    
+      }
+      .backGroundLines>.line9{
+        border-left: 0.7px solid rgb(255, 255, 255);
+        height: 120vh;
+        position: absolute;
+        top: 130vh;
+        left: 46vh;
+        z-index: 0;
+    
+    
+      }
+
+     .backGroundLines>.line10{
+        border-left: 0.7px solid rgb(255, 255, 255);
+        height: 180vh;
+        position: absolute;
+        top: 140vh;
+        left: 47.9vh;
+        z-index: 0;
+     }
+     .backGroundLines>.line11{
+        border-left: 0.7px solid rgb(255, 255, 255);
+        height: 160vh;
+        position: absolute;
+        top: 120vh;
+        left: 120vh;
+        z-index: 0;
+     }
+     .backGroundLines>.line12{
+        border-left: 0.7px solid rgb(255, 255, 255);
+        height: 170vh;
+        position: absolute;
+        top: 110vh;
+        left: 128.9vh;
+        z-index: 0;
+     }
+
+     .backGroundLines>.line13{
+        border-left: 0.7px solid rgb(255, 255, 255);
+        height: 150vh;
+        position: absolute;
+        top: 105vh;
+        left:143vh;
+        z-index: 3;
+     }
+     .backGroundLines>.line14{
+        border-left: 0.7px solid rgb(255, 255, 255);
+        height: 160vh;
+        position: absolute;
+        top: 120vh;
+        left:144.4vh;
+        z-index: 4;
+     }
+     .backGroundLines>.line15{
+        border-left: 0.7px solid rgb(255, 255, 255);
+        height: 170vh;
+        position: absolute;
+        top: 137vh;
+        left:150vh;
+        z-index: 4;
+     }
+
+     .backGroundLines>.line16{
+        border-left: 0.7px solid rgb(255, 255, 255);
+        height: 103vh;
+        position: absolute;
+        top: 100vh;
+        left:165vh;
+        z-index: 4;
+     }
+
+/* animation */
+
+
+.starGroup1{
+    animation:fadeIn 2s, 
+             swing ease-in-out 2s; 
+}
+    
+@keyframes fadeIn{
+    0% {
+        opacity:0;
+    }
+  
+    100%{
+        opacity:1;
+        
+    }
+  }
+
+@keyframes swing{
+
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(3deg); } 
+
+}
+
+.starGroup2{
+    animation:fadeIn 2s, 
+            swing2 ease-in-out 2s; 
+    transform-origin: center; 
+}
+    
+@keyframes fadeIn{
+    0% {
+        opacity:0;
+    }
+    30%{
+        opacity: 0;
+    }
+  
+    100%{
+        opacity:1;
+        
+    }
+  }
+
+
+  @keyframes swing2 {
+    15%
+    {
+        /* -webkit-transform: translateX(5px); */
+        transform: translateX(6px);
+    }
+    30%
+    {
+        /* -webkit-transform: translateX(-5px); */
+       transform: translateX(-6px);
+    } 
+    50%
+    {
+        /* -webkit-transform: translateX(3px); */
+        transform: translateX(6px);
+    }
+    65%
+    {
+        /* -webkit-transform: translateX(-3px); */
+        transform: translateX(-6px);
+    }
+    80%
+    {
+        /* -webkit-transform: translateX(2px); */
+        transform: translateX(3px);
+    }
+    100%
+    {
+        /* -webkit-transform: translateX(0); */
+        transform: translateX(0);
+    }
+}
+
+.starGroup3{
+    animation:fadeIn 2s, 
+             swing3 ease-in-out 2s;          
+    transform-origin: 0
+    }
+    
+@keyframes fadeIn{
+    0% {
+        opacity:0;
+    }
+  
+    100%{
+        opacity:1;
+        
+    }
+  }
+
+
+  @keyframes swing3 {
+    15%
+    {
+        /* -webkit-transform: translateX(5px); */
+        transform: translateX(6px);
+    }
+    30%
+    {
+        /* -webkit-transform: translateX(-5px); */
+       transform: translateX(-6px);
+    } 
+    50%
+    {
+        /* -webkit-transform: translateX(3px); */
+        transform: translateX(6px);
+    }
+    65%
+    {
+        /* -webkit-transform: translateX(-3px); */
+        transform: translateX(-6px);
+    }
+    80%
+    {
+        /* -webkit-transform: translateX(2px); */
+        transform: translateX(3px);
+    }
+    100%
+    {
+        /* -webkit-transform: translateX(0); */
+        transform: translateX(0);
+    }
+}
+
+.starGroup4{
+    animation:fadeIn 2s, 
+             swing4 ease-in-out 2s; 
+             transform-origin: center;
+}
+    
+@keyframes fadeIn{
+    0% {
+        opacity:0;
+    }
+  
+    100%{
+        opacity:1;
+        
+    }
+  }
+
+@keyframes swing4{
+
+    0% { transform: rotate(3deg); }
+    50% { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); } 
+
+}
+
+/* 
+@keyframes swing3{
+
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(3deg); } 
+
+} */
+
     /* ------------footer------------ */
 
 
 
 
-.top{
-    width: 70px;
+/* .top{
+    width: 5vh;
     height: auto;
     
-
+    top: 95vh;
+    left:172vh;
     position:fixed;
     display: block;
-    /* margin:0vh 0vh; */
-    opacity: 0.7;
-    z-index: 10;
+    margin:0vh 0vh;
+    opacity: 0.5;
+    z-index: 16;
   
   
   
-  }
+  }  */
   
     /* The progress container (grey background) */
 
@@ -403,6 +821,7 @@ p{
         position: fixed;
         bottom: 0;
         width: 100%;
+        z-index: 50;
         
         
     
@@ -410,15 +829,15 @@ p{
     .progress-container {
         
         width: 100%;
-        height: 8px;
+        height: 1.5vh;
         background:black
       }
      
       /* The progress bar (scroll indicator) */
     .progress-bar {
         
-        height: 8px;
-        background: #72ffff;
+        height: 1.5vh;
+        background: #FFD700;
         
         opacity: 70%;
       } 
