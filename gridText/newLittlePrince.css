@@ -541,11 +541,10 @@ p> img:hover{
 
 .stars{
     position:fixed;
-    /* display: block; */
+    display: block;
     top:30vh;
-    display: flex;
-    /* padding: auto;
-    margin: auto; */
+    max-width: 80%;
+    
 
 }
 
