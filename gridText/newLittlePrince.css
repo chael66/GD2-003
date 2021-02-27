@@ -543,8 +543,8 @@ p> img:hover{
     position:fixed;
     /* display: block; */
     top:30vh;
-    /* left: -47.5vh; */
-
+    
+    padding: auto;
     margin: auto;
 
 }
