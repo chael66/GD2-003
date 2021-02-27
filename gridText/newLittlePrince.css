@@ -543,9 +543,9 @@ p> img:hover{
     position:fixed;
     /* display: block; */
     top:30vh;
-    
-    padding: auto;
-    margin: auto;
+    display: flex;
+    /* padding: auto;
+    margin: auto; */
 
 }
 
