@@ -11,10 +11,13 @@
 
 
 
-
+.navWrapper{
+    /* margin-top: -40vh;  */
+}
 
 .nav, .nav2 {
     position: fixed;
+    
     width: 4vh;
     background: black;
     font-family:'Amatic SC', cursive;
@@ -90,8 +93,8 @@ body{
 
 .container{
    background-color: black;
-    max-width: 1000px;
-
+    /* max-width: 1000px; */
+    width: 100%;
      margin: auto;
      text-align: center;
      
@@ -108,13 +111,18 @@ body{
 }
 
 .chapters{
-     display: block; 
-     position: absolute; 
-    background-color: black;
-    width: 100vh;
-    margin: auto;
-    z-index: 15;
-    justify-content: center;
+    display: block; 
+   position: relative;
+   background-color: black;
+   width: 100vh;
+   margin: auto;
+  
+   justify-content: center;
+   z-index: 10;
+}
+
+.chapters .chapter {
+    transition: transform 10s, opacity 4s;
     /* left: -15vh; */
     /* opacity: 0; */
 }
@@ -125,27 +133,32 @@ body{
 
 
 h1{
-    position: relative;
+
+    text-align: center;
     font-size: 20vh;
     font-family:'Amatic SC', cursive;
-    top: 40vh ;
-    color: cornsilk;
-    animation: appear ease-in-out 3s
+    /* top: 40vh; */
+    /* margin-top: 40vh ; */
+    color: rgb(255, 255, 255);
+    /* animation: appear ease-in-out 3s */
     
 }
-.booktitle{
+.bookTitle{
+    position: absolute;
+    top: 40vh;
+    left: 30%;
     text-decoration: none;
+    /* margin-top: 30vh; */
+    animation: appear ease-in-out 2s 
 }
-.booktitle:hover{
-    cursor: pointer;
-}
+
 @keyframes appear{
     0% {
         opacity: 0;
 
     }
     100% {
-        opacity: 100;
+        opacity: 1;
     }
 }
 
@@ -156,8 +169,8 @@ h2{
     
 }
 p{
-    text-align: center;
-    font-size:2.1vh;
+    text-align: left;
+    font-size:2.7vh;
     font-family: 'Indie Flower', cursive;
     line-height: 4.1vh;
     letter-spacing: 0.3vh;
@@ -218,11 +231,11 @@ p> img:hover{
     justify-content: center;
     border-radius: 80%;
     color: white;
-    opacity: 40%;
+    opacity: 50%;
     margin: auto;
      position:relative;
-    left:6vh;
-    top:10vh;
+    left:0vh;
+    top:30vh;
     
 }
 
@@ -347,83 +360,11 @@ p> img:hover{
 
 
 /*  */
-.stars{
-    position:fixed;
-    display: block;
-    top:30vh;
-    margin: auto;
-
-}
 
 
 
-    .smallStar1{
-        position: absolute;
-       
-        width: 3vh;
-        height: auto;
-        top: 15vh;
-        left: 11vh;
-        z-index: 5;
-    }
-        .smallStar1:hover{
-                
-            width: 4vh;
-            height: auto;
-            
-        }
-    .smallStar2{
-        position: absolute;
-        
-        width: 3vh;
-        height: auto;
-        top: 19vh;
-        left: 92vh;
-        z-index: 5;
-
-    
-    }
-        .smallStar2:hover{
-            
-            width: 4vh;
-            height: auto;
-            
-        }
-    .bigStar1{
-        position: absolute;
   
-        width: 8vh;
-        height: auto;
-        top: 19vh;
-        left: -7vh;
-        z-index: 5;
-
-    }
-        .bigStar1:hover{
-          
-            width: 9vh;
-            height: auto;
-            
-        }
-    .bigStar2{
-        position: absolute;
-    
-    
-        width:  8vh;
-        height: auto;
-        top:21vh;
-        left: 105vh;
-        z-index: 5;
-
-    }
-        .bigStar2:hover{
-            
-            width: 9vh;
-            height: auto;
-            
-        }
-
-
+  
 /*  */
 
 /* .starLines{
@@ -434,72 +375,27 @@ p> img:hover{
     z-index: 5;
 
 } */
-    .line1{
+   
+   
 
-        border-left: 0.7px solid rgb(255, 255, 255);
-        height:15vh;
-        position: absolute;
-        top: 8vh;
-        left: -3vh;
-        z-index: 4;
-        
     
-        
-    }
-    .line2{
-    
-        border-left: 0.7px solid rgb(255, 255, 255);
-        height: 15vh;
-        position: absolute;
-        top: 2vh;
-        left: 12.5vh;
-        z-index: 4;
-
-        
-    }
-    .line3{
-    
-        border-left: 0.7px solid rgb(255, 255, 255);
-        height: 20vh;
-        position: absolute;
-        top:0vh;
-        left: 93.5vh;
-        z-index: 4;
-
-        
-    }
-    
-    .line4{
-    
-        border-left: 0.7px solid rgb(255, 255, 255);
-        height: 10vh;
-        position: absolute;
-        top:12vh;
-        left:109vh;
-        z-index: 4;
-
-    }
-    
-
-
-
-
-
-
-
-
-
-
- .backGroundLines> .line5, .line6, .line7, .line8, .line9, .line10, .line11, .line12, .line13, .line14, .line15, .line16
-  {
   
+
+
+
+
+
+
+ /* .backGroundLines> .line5, .line6, .line7, .line8, .line9, .line10, .line11, .line12, .line13, .line14, .line15, .line16
+  {
+   */
     
     /* display: block; */
     /* border-left: 0.7px solid rgb(255, 255, 255);
     padding: 0;
     margin: 0;
    */
-    margin: auto;
+    /* margin: auto;
     overflow: hidden;
    
     z-index: 2;
@@ -523,8 +419,8 @@ p> img:hover{
     .backGroundLines> .line5{
       border-left: 0.7px solid rgb(255, 255, 255);
       height: 100vh;
-      position: absolute;
-      top: 110vh;
+      
+      top: 0vh;
       left: 15vh;
   
   
@@ -535,8 +431,8 @@ p> img:hover{
     .backGroundLines>.line6{
       border-left: 0.7px solid rgb(255, 255, 255);
       height: 120vh;
-      position: absolute;
-      top: 100vh;
+      
+      top: 0vh;
       left: 12vh;
      
   
@@ -546,8 +442,8 @@ p> img:hover{
     .backGroundLines>.line7{
       border-left: 0.7px solid rgb(255, 255, 255);
       height: 100vh;
-      position: absolute;
-      top: 130vh;
+      
+      top: 0vh;
       left: 21vh;
       
   
@@ -557,8 +453,8 @@ p> img:hover{
     .backGroundLines>.line8{
         border-left: 0.7px solid rgb(255, 255, 255);
         height: 130vh;
-        position: absolute;
-        top: 120vh;
+        
+        top: 0vh;
         left: 32.4vh;
         z-index: -2;
        
@@ -568,8 +464,8 @@ p> img:hover{
       .backGroundLines>.line9{
         border-left: 0.7px solid rgb(255, 255, 255);
         height: 120vh;
-        position: absolute;
-        top: 130vh;
+        
+        top: 0vh;
         left: 46vh;
         z-index: 0;
     
@@ -579,24 +475,24 @@ p> img:hover{
      .backGroundLines>.line10{
         border-left: 0.7px solid rgb(255, 255, 255);
         height: 180vh;
-        position: absolute;
-        top: 140vh;
+        
+        top: 0vh;
         left: 47.9vh;
         z-index: 0;
      }
      .backGroundLines>.line11{
         border-left: 0.7px solid rgb(255, 255, 255);
         height: 160vh;
-        position: absolute;
-        top: 120vh;
+        
+        top: 0vh;
         left: 120vh;
         z-index: 0;
      }
      .backGroundLines>.line12{
         border-left: 0.7px solid rgb(255, 255, 255);
         height: 170vh;
-        position: absolute;
-        top: 110vh;
+        
+        top: 0vh;
         left: 128.9vh;
         z-index: 0;
      }
@@ -604,24 +500,24 @@ p> img:hover{
      .backGroundLines>.line13{
         border-left: 0.7px solid rgb(255, 255, 255);
         height: 150vh;
-        position: absolute;
-        top: 105vh;
+        
+        top: 0vh;
         left:143vh;
         z-index: 3;
      }
      .backGroundLines>.line14{
         border-left: 0.7px solid rgb(255, 255, 255);
         height: 160vh;
-        position: absolute;
-        top: 120vh;
+        
+        top:0vh;
         left:144.4vh;
         z-index: 4;
      }
      .backGroundLines>.line15{
         border-left: 0.7px solid rgb(255, 255, 255);
         height: 170vh;
-        position: absolute;
-        top: 137vh;
+        
+        top: 0vh;
         left:150vh;
         z-index: 4;
      }
@@ -629,21 +525,39 @@ p> img:hover{
      .backGroundLines>.line16{
         border-left: 0.7px solid rgb(255, 255, 255);
         height: 103vh;
-        position: absolute;
-        top: 100vh;
-        left:165vh;
+        
+        top: 0vh;
+        left:0vh;
         z-index: 4;
-     }
+     } */
 
 /* animation */
 
 
-.starGroup1{
-    animation:fadeIn 2s, 
-             swing ease-in-out 2s; 
+
+
+
+
+
+.stars{
+    position:fixed;
+    display: block;
+    top:30vh;
+    left: -47.5vh;
+
+    margin: auto;
+
 }
+
+
+.starGroup1{
+    position: absolute;
+    left: 80vh;
+    animation:fadeIn 2s, 
+             swing ease-in-out 3.5s;  
+    }
     
-@keyframes fadeIn{
+    @keyframes fadeIn{
     0% {
         opacity:0;
     }
@@ -652,144 +566,213 @@ p> img:hover{
         opacity:1;
         
     }
-  }
+    }
 
-@keyframes swing{
+    @keyframes swing{
 
     0% { transform: rotate(3deg); }
     100% { transform: rotate(3deg); } 
 
-}
+    }
+    .bigStar1{
+        position: absolute;
+  
+        width: 8vh;
+        height: auto;
+        top: 17vh;
+        left: -4vh;
+        z-index: 5;
+
+    }
+        .bigStar1:hover{
+          
+            width: 9vh;
+            height: auto;
+            
+        }
+   
+
+    .line1{
+        position: absolute;
+        border-left: 0.7px solid rgb(255, 255, 255);
+        height:18vh;
+       
+        top: 0vh;
+        left: 0vh;
+        z-index: 4;
+        
+    }
+    
+
 
 .starGroup2{
+    position: absolute;
+    top:0vh;
+    left: 95vh;
     animation:fadeIn 2s, 
-            swing2 ease-in-out 2s; 
-    transform-origin: center; 
-}
+            swing ease-in-out 2s; 
     
-@keyframes fadeIn{
-    0% {
-        opacity:0;
     }
-    30%{
-        opacity: 0;
-    }
-  
-    100%{
-        opacity:1;
         
+    @keyframes fadeIn{
+        0% {
+            opacity:0;
+        }
+    
+        100%{
+            opacity:1;
+            
+        }
     }
-  }
 
+    @keyframes swing{
 
-  @keyframes swing2 {
-    15%
-    {
-        /* -webkit-transform: translateX(5px); */
-        transform: translateX(6px);
+        0% { transform: rotate(10deg); }
+        50% { transform: rotate(-10deg); }
+         100% { transform: rotate(0deg); } 
+
     }
-    30%
-    {
-        /* -webkit-transform: translateX(-5px); */
-       transform: translateX(-6px);
-    } 
-    50%
-    {
-        /* -webkit-transform: translateX(3px); */
-        transform: translateX(6px);
+    .smallStar1{
+        position:absolute;
+        width: 3vh;
+        height: auto;
+        top: 13vh;
+        left: -1.2vh;
+        z-index: 5;
     }
-    65%
-    {
-        /* -webkit-transform: translateX(-3px); */
-        transform: translateX(-6px);
-    }
-    80%
-    {
-        /* -webkit-transform: translateX(2px); */
-        transform: translateX(3px);
-    }
-    100%
-    {
-        /* -webkit-transform: translateX(0); */
-        transform: translateX(0);
-    }
-}
+        .smallStar1:hover{
+                
+            width: 4vh;
+            height: auto;
+            
+        }
+    .line2{
+            position: absolute;
+            border-left: 0.7px solid rgb(255, 255, 255);
+            height: 14vh;
+        
+            top: 0vh;
+            left:0vh;
+            z-index: 4;
+    
+            
+        }
+
 
 .starGroup3{
+    position: absolute;
+    top: 0vh;
+    left: 181vh;
     animation:fadeIn 2s, 
-             swing3 ease-in-out 2s;          
-    transform-origin: 0
-    }
-    
-@keyframes fadeIn{
-    0% {
-        opacity:0;
-    }
+              swing ease-in-out 2s;          
   
-    100%{
-        opacity:1;
+    }
+    @keyframes fadeIn{
+        0% {
+            opacity:0;
+        }
+    
+        100%{
+            opacity:1;
+            
+        }
+    }
+
+    @keyframes swing{
+
+        0% { transform: rotate(5deg); }
+        50% { transform: rotate(-5deg); }
+        100% { transform: rotate(0deg); } 
+
+    }
+
+    .smallStar2{
+        position: absolute;
+        width: 3vh;
+        height: auto;
+        top: 18vh;
+        left: -1.35vh;
+        z-index: 5;
+
+    
+    }
+        .smallStar2:hover{
+            
+            width: 4vh;
+            height: auto;
+            
+        }
+
+    .line3{
+            position: absolute;
+            border-left: 0.7px solid rgb(255, 255, 255);
+            height: 20vh;
         
-    }
-  }
-
-
-  @keyframes swing3 {
-    15%
-    {
-        /* -webkit-transform: translateX(5px); */
-        transform: translateX(6px);
-    }
-    30%
-    {
-        /* -webkit-transform: translateX(-5px); */
-       transform: translateX(-6px);
-    } 
-    50%
-    {
-        /* -webkit-transform: translateX(3px); */
-        transform: translateX(6px);
-    }
-    65%
-    {
-        /* -webkit-transform: translateX(-3px); */
-        transform: translateX(-6px);
-    }
-    80%
-    {
-        /* -webkit-transform: translateX(2px); */
-        transform: translateX(3px);
-    }
-    100%
-    {
-        /* -webkit-transform: translateX(0); */
-        transform: translateX(0);
-    }
-}
+            top:0vh;
+            left: 0vh;
+            z-index: 4;
+    
+            
+        }
 
 .starGroup4{
-    animation:fadeIn 2s, 
-             swing4 ease-in-out 2s; 
-             transform-origin: 50% 0;
-}
-    
-@keyframes fadeIn{
-    0% {
-        opacity:0;
+    position: absolute;
+    left: 190vh;
+    animation:fadeIn 3s, 
+             swing ease-in-out 3s; 
+             
     }
-  
-    100%{
-        opacity:1;
         
+    @keyframes fadeIn{
+        0% {
+            opacity:0;
+        }
+    
+        100%{
+            opacity:1;
+            
+        }
     }
-  }
 
-@keyframes swing4{
+    @keyframes swing{
 
-    0% { transform: rotate(3deg); }
-    50% { transform: rotate(-3deg); }
-    100% { transform: rotate(0deg); } 
+        0% { transform: rotate(5deg); }
+        50% { transform: rotate(-5deg); }
+        100% { transform: rotate(0deg); } 
 
-}
+    }
+    .bigStar2{
+
+    
+        position: absolute;
+        width:  8vh;
+        height: auto;
+        top:17vh;
+        left: -3.5vh;
+        z-index: 5;
+
+    }
+        .bigStar2:hover{
+            
+            width: 9vh;
+            height: auto;
+            
+        }
+    .line4{
+    
+            border-left: 0.7px solid rgb(255, 255, 255);
+            height: 20vh;
+            position: absolute;
+            top:0vh;
+            left:0vh;
+            z-index: 4;
+    
+     }
+        
+    
+    
+    
+    
 
 /* 
 @keyframes swing3{

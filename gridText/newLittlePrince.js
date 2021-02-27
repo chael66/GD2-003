@@ -11,21 +11,47 @@ function myFunction() {
 }
 
 
+// /////////////////////////////
 
-$(document).ready(function() {
+
+
+function isElementUnderBottom(elem, triggerDiff) {
+  const { top } = elem.getBoundingClientRect();
+  const { innerHeight } = window;
+  return top > innerHeight + (triggerDiff || 0);
+}
+
+function handleScroll() {
+  const elems = document.querySelectorAll('.chapter');
+  elems.forEach(elem => {
+    if (isElementUnderBottom(elem, -200)) {
+      elem.style.opacity = "0";
+      elem.style.transform = 'translateY(70px)';
+    } else {
+      elem.style.opacity = "1";
+      elem.style.transform = 'translateY(0px)';
+    }
+  })
+}
+
+window.addEventListener('scroll', handleScroll);
+
+
+
+// $(document).ready(function() {
  
-  $(window).scroll( function(){
+//   $(window).scroll( function(){
      
-      $('.chapters').each( function(i){
-          var bottom_of_object = $(this).offset().top + $(this).outerHeight();
-          var bottom_of_window = $(window).scrollTop() + $(window).height();
+//       $('.chapters').each( function(i){
+//           var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+//           var bottom_of_window = $(window).scrollTop() + $(window).height();
          
-          if( bottom_of_window > bottom_of_object/2 ){
-              $(this).animate({'opacity':'1'},500);
-          }
-      }); 
-  });
-});
+//           if( bottom_of_window > bottom_of_object/2 ){
+//               $(this).animate({'opacity':'1'},500);
+//           }
+//       }); 
+//   });
+// });
 
 
 
