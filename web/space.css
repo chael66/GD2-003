@@ -1,28 +1,10 @@
-body{
-    background-image: url('https://media4.giphy.com/media/9bTjZrytydVRK/giphy.gif?cid=ecf05e477lgen9ss7pna0r7w17agwobia2af5pku3k0evkjg&rid=giphy.gif');
-    background-size: cover;
-    
-    
-    width: 100000px;
-    height: 1000px;
-
-	color: white; 
-
-}
-
-h1{
-	font-size: 90px;  font-family: futura; text-align: left; word-spacing: 50px;}
-
-
-img.sun{
-	width:3%
-}
-
-.mercury{
-	 ;
-}
-
-
-
-
-
+#test {
+   margin: 0 auto;
+   width:50px;
+   height: 50px;
+   background: #00f;
+ }
+ .bt {
+   background: none;
+  
+ }
