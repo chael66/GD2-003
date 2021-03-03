@@ -1,5 +1,14 @@
 
 
+
+$(document).mousemove(function(e){
+  $('.cursor').css("top", e.pageY);
+  $('.cursor').css("left", e.pageX);
+});
+
+
+
+
 var demo = new Vue({
     el: '#demo',
     data: {
