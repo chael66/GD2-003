@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <link rel = "stylesheet" type="text/css" href ="gravity.css">
+       
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link src="../base/reset.css">
+      
+
+
+
+    </head>
+
+    <body>
+
+
+
+           
+        
+        <div class="c-box">
+            
+            <div class="btn">Control</div>
+            
+                <div class="main-c" >
+                    
+                    <div style="text-align:center" class="start-g">
+                            Start Gravity
+                    </div>
+                    <div style="text-align:center"class="stop-g">
+                            zero gravity
+                    </div>
+
+                    
+                    <div class="input-area">
+                        <input type="range"  min="-3" max="3" step=".2" value="0" id="gravity-x" ></input>
+                        <input type="range"  min="-3" max="3" step=".2" value="1" id="gravity-y" ></input>
+                    </div>
+            
+                    <div style="text-align:center"class="close" >
+                        Close
+                    </div>
+                        
+
+                </div>
+
+            </div>
+
+        
+
+
+            <div id="demo" style="text-align:center">
+                
+                <p style="text-align:center" id="wbox">
+                    <span class="test" v-for="a in message":style="{color: getColor()}" >
+                        {{a}}
+                    </span>
+                </p>
+                <input  v-model="message" style="text-align:center" id="g-ip"></input>
+                
+            </div>
+
+
+
+            <div style="text-align:center" class="g-btn">
+                
+                <button class="start-g" type="submit" id="grav" >
+                    START GRAVITY
+                </button>
+                <button class="stop-g" type="submit" id="grav">
+                ZERO GRAVITY
+                </button>
+
+            </div>
+
+
+        </div>
+
+        
+        <script src="gravity.js"></script>
+
+    </body>
+
+</html>
