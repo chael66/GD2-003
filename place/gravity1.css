@@ -1,10 +1,10 @@
 body{
 	overflow: hidden;
-	font-family: 'Nova Round', cursive;
-	background: url("http://www.designbolts.com/wp-content/uploads/2012/12/White-Linen-Seamless-Pattern-For-Website-Backgrounds.jpg");
+  font-family: 'DotGothic16', sans-serif;
+	background-color: black;
 }
 	
-	input[type=range]::-webkit-slider-thumb{
+	/* input[type=range]::-webkit-slider-thumb{
 	  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
   border: 1px solid #000000;
   height: 36px;
@@ -100,92 +100,101 @@ input[type=range]:focus::-ms-fill-lower {
 }
 input[type=range]:focus::-ms-fill-upper {
   background: #484d4d;
-}
-#me{
-display: inline-block;
-position:fixed;
-margin:0;
-font-weight:500;
-font-size:20px;
-color: gray;
-}
-.c-box{
+} */
+
+/* .c-box{
 width:250px;
 float:right;
 border: solid 5px #606c7f;
 border-radius: 5%;
-}
-.btn{
+} */
+/* .btn{
 text-align:center;
 font-size: 25px;
 background: #606c7f;
 color: #fff;
-}
-.main-c{
+} */
+/* .main-c{
 	display: none;
-}
-.start-g, .stop-g{
+} */
+/* .start-g, .stop-g{
+  display: block;
 margin-top:10px;
 margin-left:4px;
 margin-right:4px;
 display: inline-block;
-}
-#gravity-y{
-transform: rotateZ(90deg);
-float:right;
-}
-.input-area{
+} */
+
+/* .input-area{
 margin-top:70px;
-}
-.reset, .close, .stop-g, .start-g{
-width:90px;
-padding-bottom:5px;
-padding-top:5px;
-text-transform: uppercase;
+} */
+
+
+.stop-g, .start-g{
+display: inline-block;
+width: 300px;
+height: 300px;
+border-radius: 50%;
+padding: 0%;
+margin: 5% 5% 0 5%;
+/* padding-bottom:5px;
+padding-top:5px; */
+/* text-transform: uppercase;
 text-align: center;
-font-weight:600;
-border: solid 3px #606c7f;;
+font-weight:600; */
+/* border: solid 3px #606c7f;; */
 cursor: pointer;
 border-radius: 5px;
 transition: all .3s;
+opacity: 0.5;
 }
-.close:hover, .stop-g:hover, .start-g:hover{
+
+ .stop-g:hover, .start-g:hover{
 transition: all .5s;
-border-radius: 12px;
-background:#606c7f;;
-color: #fff;
+opacity: 1;
+/* border-radius: 12px; */
+/* background:#606c7f;; */
+/* color: #fff; */
 }
 
 
 #demo{
 	margin-top:10%; 
+  
 }
 
 #demo input{
-	padding: 0px;
+padding: 0px;
 width: 300px;
 height: 30px;
 font-size: 20px;
 transition: all 1s;
 outline: none;
 text-align: center;
-	background: transparent;
+background: whitesmoke;
 border: solid 3px;
-border-color: transparent transparent brown;
+border-color: transparent 
+
 }
 #demo input:focus{
 width: 400px;
 transition: all 1s;	
 border-color: gray;
 }
-#wbox span{
-	font-size: 85px;
-}
-.test{
-	font-size: 85px;
+#wbox {
+	font-size: 80px;
+  letter-spacing:2px;
+
 }
 
-@media only screen and (max-width: 600px){
+.test{
+	font-size: 90px;
+  padding: 0;
+  margin: 0;
+  
+}
+
+/* @media only screen and (max-width: 600px){
 #me{
 	display: block;
 	text-align: center;
@@ -205,5 +214,570 @@ border-color: gray;
 
 #demo input:focus{
 	width:300px;
+} */
+
+
+
+
+/* ---------------------- ---------------------- ---------------------- ---------------------- ---------------------- ---------------------- ---------------------- ---------------------- ----------------------  */
+
+
+.moon{
+
+  justify-content: center;
+  position: absolute;
+  margin: 0;
 }
+
+
+
+  .circleMoon{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: rgb(255, 232, 131);
+    /* z-index: 2; */
+
+  }
+    .circleMoon::before{
+        content: " ";
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        box-shadow: inset -21px -25px 18px 2px  rgb(219, 180, 108);
+        left: 0px;
+    }
+  .circleHighLighter{
+    content: " ";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: inset -21px -25px 10px -27px rgb(255, 246, 207);
+    top: 0px;
+    left: 0px;
+  }
+    .circleHighLighter::before  {
+        content: " ";
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        box-shadow: inset 13px 15px 10px -1px rgb(255, 246, 207);
+        margin-top: 0px;
+        left: 0ch;
+
+    }
+
+  .crater1 {
+    background-color: rgb(255, 241, 180);
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 50px;
+    margin-left: 122px;
+    position: absolute;
+
+    }
+    .crater1::before{
+        content: " ";
+        width:70px;
+        height: 70px;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        box-shadow: inset 47px -64px 7px -77px rgb(255, 255, 255);
+        
+    }
+    .crater1::after{
+        content: " ";
+        width:70px;
+        height: 70px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: inset 50px 63px 20px -76px rgba(255, 200, 98, 0.822);
+        top: 0;
+        left: 0px;
+    }
+
+  .crater2 {
+    background-color: rgb(255, 241, 180);
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-top: 97px;
+    margin-left: 157px;
+    position: absolute;
+
+    }
+    .crater2::before{
+        content: " ";
+        width:70px;
+        height: 70px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: inset -56px -75px 15px -90px  rgb(255, 255, 255);
+        top: 0;
+        left: 0px;
+    }
+    .crater2::after{
+        content: " ";
+        width:70px;
+        height: 70px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: inset -46px 99px 24px -111px  rgba(255, 200, 98, 0.822);
+        top: 0;
+        left: 0px;
+    }
+
+  .crater3 {
+    background-color: rgb(255, 241, 180);
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: 106px;
+    margin-left: 219px;
+    position: absolute;
+    }
+    .crater3::before{
+        content: " ";
+        width:30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: inset -56px -75px 15px -90px  rgb(255, 255, 255);
+        top: 0;
+        left: 0px;
+    }
+    .crater3::after{
+        content: " ";
+        width:30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: inset 50px 63px 20px -78px rgba(255, 200, 98, 0.822);
+        top: 0;
+        left: 0px;
+    }
+  .crater4 {
+    background-color: rgb(255, 241, 180);
+    width: 57px;
+    height: 38px;
+    border-radius: 50%;
+    margin-top: 205px;
+    margin-left: 204px;
+    position: absolute;
+    transform: rotate(135deg);
+  }   
+    .crater4::before{
+        content: " ";
+        width:57px;
+        height: 38px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: inset -1px 10px 1px -8px rgb(255, 255, 255);
+        top: 0;
+        left: 0px;
+    }
+    .crater4::after{
+        content: " ";
+        width:57px;
+        height: 38px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: inset 4px -44px 16px -38px rgba(255, 200, 98, 0.822);
+        top: 0;
+        left: 0px;
+    }
+  .crater5{
+    background-color: rgb(255, 241, 180);
+    width: 68px;
+    height: 60px;
+    border-radius: 50%;
+    margin-top: 171px;
+    margin-left: 50px;
+    position: absolute;
+    transform: rotate(45deg);
+  }   
+    .crater5::before{
+        content: " ";
+        width:68px;
+        height: 60px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: inset -29px -5px 7px -27px  rgb(255, 255, 255);
+        top: 0;
+        left: 0px;
+    }
+    .crater5::after{
+        content: " ";
+        width:68px;
+        height: 60px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: inset 43px -7px 31px -32px  rgba(255, 200, 98, 0.822);
+        top: 0;
+        left: 0px;
+    }
+  .crater6{
+    background-color: rgb(255, 241, 180);
+    width: 26px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 147px;
+    margin-left: 15px;
+    position: absolute;
+    transform: rotate(151deg);
+
+  }   
+    .crater6::before{
+        content: " ";
+        width: 26px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: inset 2px 4px 1px -1px rgb(255, 255, 255);
+        top: 0;
+        left: 0px;
+  }
+
+
+
+    .crater6::after{
+        content: " ";
+        width: 26px;
+        height: 40px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: inset -8px -41px 27px -32px rgba(255, 200, 98, 0.822);
+        top: 0;
+        left: 0px;
+
+
+    }
+
+  .crater7{
+    background-color: rgb(255, 241, 180);
+    width: 30px;
+    height: 20px;
+    border-radius: 50%;
+    margin-top: 48px;
+    margin-left: 55px;
+    position: absolute;
+    transform: rotate(130deg);
+  }   
+    .crater7::before{
+        content: " ";
+        width: 30px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: inset -1px 2px 1px 1px rgb(255, 255, 255);
+        top: 0;
+        left: 0px;
+  }
+
+
+
+    .crater7::after{
+        content: " ";
+        width: 30px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: inset -8px -41px 27px -36px rgba(255, 200, 98, 0.822);
+        top: 0;
+        left: 0px;
+
+        
+    }
+  .crater8{
+    background-color: rgb(255, 241, 180);
+    width: 20px;
+    height: 13px;
+    border-radius: 50%;
+    margin-top: 27px;
+    margin-left: 91px;
+    position: absolute;
+    transform: rotate(141deg);
+  }   
+    .crater8::before{
+        content: " ";
+        width: 20px;
+        height: 13px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: inset -1px 2px 1px 2px rgb(255, 255, 255);
+        top: 0;
+        left: 0px;
+  }
+
+
+
+    .crater8::after{
+        content: " ";
+        width: 20px;
+        height: 13px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: inset -8px -41px 27px -36px rgba(255, 200, 98, 0.822);
+        top: 0;
+        left: 0px;
+
+        
+    }
+
+
+    /* .crater7::after{
+        content: " ";
+        width: 30px;
+        height: 20px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: inset -8px -41px 27px -36px rgba(255, 200, 98, 0.822);
+
+        
+    } */
+
+  .crater9{
+    background-color: rgb(255, 241, 180);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: 78px;
+    margin-left: 100px;
+    position: absolute;
+    transform: rotate(141deg);
+  }   
+    .crater9::before{
+        content: " ";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: inset -1px 2px 1px -1px rgb(255, 255, 255);
+        top: 0;
+        left: 0px;
+  }
+
+
+
+    .crater9::after{
+        content: " ";
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        position: absolute;
+        box-shadow: inset -8px -41px 3px -36px rgba(255, 200, 98, 0.522);
+        top: 0;
+        left: 0px;
+        
+    }
+  
+
+
+
+
+
+
+
+/* ---------------------- ---------------------- ---------------------- ---------------------- ---------------------- ---------------------- ---------------------- ---------------------- */
+
+
+
+
+
+
+.globe{
+      
+      justify-content: center;
+      position: absolute;
+      margin: 0;
+  }
+  
+
+  
+  
+  
+  
+  
+  
+  .circleGlobe {
+      width : 300px; 
+      height : 300px;
+      border-radius: 50%;
+      background :rgb(100, 149, 237);
+      position: absolute;
+  
+      
+     
+      
+  }
+  
+  .circleGlobe::after{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height:300px; 
+    border-radius: 50%;
+    box-shadow: inset 24px 29px 21px -8px rgb(220, 229, 255);
+    opacity: 0.3;
+    top: 0px;
+    left: 0px;
 }
+  
+      .maps1{
+      /* south */
+          content:"";
+          position: absolute;
+          width: 123px;
+          height: 117px;
+          top: 167px;
+          left: 166px;
+          background-color: green;
+          transform: rotate(7deg);
+  
+          clip-path: polygon(19% 5%, 14% 12%, 12% 20%, 13% 30%, 21% 38%, 27% 38%, 39% 42%, 46% 40%, 48% 52%, 51% 54%, 51% 59%, 53% 66%, 56% 73%, 54% 84%, 56% 84%, 46% 93%, 51% 93%, 59% 83%, 62% 81%, 66% 67%, 72% 57%, 77% 43%, 82% 34%, 87% 22%, 86% 8%, 89% 1%, 79% 1%, 77% 4%, 61% -6%, 38% 2%, 26% 2%, 21% 4%)
+  
+      }
+          
+      .maps2{ 
+      /* north */
+  
+          content: "";
+          position: absolute;
+          width: 175px;
+          height: 161px;
+          top: 29px;
+          left: 22px;
+          background-color: green;
+          transform: rotate(-3deg);
+          clip-path: polygon(22% 2%, 19% 6%, 16% 7%, 13% 16%, 17% 19%, 31% 23%, 25% 32%, 27% 52%, 36% 78%,38% 79%, 33% 63%, 39% 70%, 43% 81%, 62% 93%, 69% 90%, 80% 101%, 99% 100%, 93% 98%, 96% 96%, 87% 96%, 78% 94%, 78% 88%, 70% 82%, 64% 82%, 59% 73%, 77% 74%, 81% 77%, 83% 76%, 81% 73%, 89% 63%, 98% 38%, 98% 30%, 97% 27%, 92% 21%, 132% 27%, 88% 12%, 76% 11%, 73% 20%, 77% 24%, 74% 31%, 72% 28%, 65% 25%, 60% 25%, 57% 21%, 66% 13%, 58% 10%, 56% 12%, 45% 10%, 40% 12%, 35% 11%, 32% 13%, 30% 4%);
+      }
+      .maps3 {
+      /*  upper1*/
+          content: "";
+          position: absolute;
+          width: 78px;
+          height: 64px;
+          top: 14px;
+          left: 95px;
+          background-color: green;
+          transform: rotate(-7deg);
+          clip-path: polygon(37% 26%, 31% 30%, 35% 45%, 43% 45%, 40% 52%, 45% 59%, 50% 52%, 49% 47%, 50% 43%, 63% 41%, 61% 49%, 77% 51%, 84% 36%, 80% 34%, 85% 32%, 82% 27%, 69% 22%, 56% 26%, 54% 23%);
+      }
+      .maps4 {
+          content: "";
+          position: absolute;
+          width: 111px;
+          height: 60px;
+          top: 6px;
+          left: 119px;
+          background-color: green;
+          transform: rotate(12deg);
+          clip-path: polygon(36% 16%, 26% 31%, 30% 36%, 40% 34%, 50% 38%, 59% 42%, 67% 43%, 67% 36%, 64% 29%, 61% 18%, 44% 8%);
+      }
+  
+      .maps5{
+  
+          content: "";
+          position: absolute;
+          width: 35px;
+          height: 33px;
+          top: 32px;
+          left: 92px;
+          background-color: green;
+          transform: rotate(-4deg);
+          clip-path: polygon(57% 30%, 48% 36%, 51% 42%, 58% 42%, 66% 34%, 74% 28%, 70% 23%, 59% 21%);
+      }
+      
+      .maps6{
+  
+          content: "";
+          position: absolute;
+          width: 34px;
+          height: 37px;
+          top: 18px;
+          left: 95px;
+          background-color: green;
+          transform: rotate(-4deg);
+          clip-path: polygon(36% 36%, 43% 36%, 51% 44%, 51% 51%, 44% 52%, 37% 53%, 31% 46%);
+      }
+      .maps7{
+  
+          content: "";
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          top: 26px;
+          left: 91px;
+          background-color: green;
+          transform: rotate(-4deg);
+          clip-path: polygon(36% 36%, 43% 36%, 51% 44%, 51% 51%, 44% 52%, 37% 53%, 31% 46%);
+      }
+  
+      .maps8{
+  
+          content: "";
+          position: absolute;
+          width: 20px;
+          height: 20px;
+          top: 23px;
+          left: 93px;
+          background-color: green;
+          transform: rotate(-4deg);
+          clip-path: polygon(38% 49%, 40% 57%, 64% 48%, 63% 45%, 56% 44%, 49% 44%);
+      }
+  
+      .maps9{
+  
+          content: "";
+          position: absolute;
+          width: 45px;
+          height: 54px;
+          top: 18px;
+          left: 78px;
+          background-color: green;
+          transform: rotate(-4deg);
+          clip-path: polygon(38% 35%, 44% 38%, 48% 36%, 54% 38%, 63% 37%, 71% 45%, 58% 56%, 46% 57%, 48% 51%, 46% 45%, 41% 47%, 29% 45%, 34% 36%, 39% 36%);
+      }
+  
+      .shadow {
+          content: "";
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+          box-shadow: inset -21px -25px 35px 5px rgb(18 23 37);
+          opacity: 0.6;
+      }
+      .shadow::before{
+          /* 반사광 */
+          content: "";
+          position: absolute;
+          width: 300px;
+          height: 300px;
+          border-radius: 50%;
+          box-shadow: inset -21px -25px 9px -27px rgb(220, 229, 255);
+          opacity: 0.4;
+          top: 0px;
+          left: 0px;
+      }
+  
+      /* .highlight{
+          content: "";
+          position: absolute;
+          width: 300px;
+          height:300px; 
+          border-radius: 50%;
+          box-shadow: inset 24px 29px 21px -8px rgb(220, 229, 255);
+          opacity: 0.3;
+          top: 0;
+          left: 0;
+      } */
+  
+  

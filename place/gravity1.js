@@ -1,21 +1,23 @@
+
+
 var demo = new Vue({
     el: '#demo',
     data: {
-      message: 'Gravity Text',
-      getRandomColor: '#03a9f4'
+      message: 'Type here',
+      getRandomColor: ''
     },
     methods: {
       getColor: function () {
-      console.log('sadasd')
+      
          var letters = '0123456789ABCDEF';
-    var color = '#';
-    for (var i = 0; i < 6; i++ ) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-      }
-    }
-})
+         var color = '#';
+          for (var i = 0; i < 6; i++ ) {
+              color += letters[Math.floor(Math.random() * 14)];
+          }
+          return color;
+            }
+          }
+     })
 
 
 $(document).ready(function() {
@@ -24,7 +26,7 @@ $(document).ready(function() {
   	var gr_y = document.getElementById("gravity-y").value;
 
 	$(".start-g").click(function(){
-		$("span").addClass("test");
+	
 		$(".test").throwable({
 						drag:true,
                         gravity:{x:gr_x,y:gr_y},
@@ -57,8 +59,3 @@ $(document).ready(function() {
 	});
 });
 
-$(document).ready(function(){
-$(".btn").click(function(){$(".main-c").slideToggle("slow");});
-$(".close").click(function(){$(".main-c").slideUp();});
-
-});

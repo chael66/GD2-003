@@ -3,12 +3,13 @@
     <head>
         <link src="../base/reset.css">
        <link rel = "stylesheet" type="text/css" href ="gravity1.css">
-       
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
        <script src='https://vuejs.org/js/vue.min.js'></script>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
      
        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.10/vue.min.js"></script>
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       
        <script src="https://benahm.github.io/jquery.throwable/javascripts/jquery.throwable.js"></script>
        
        
@@ -24,42 +25,96 @@
 
 
 
-           
-        
-<p id="me"> A PEN by Mayur Birle </p>
+        <!-- <div class="c-box"> -->
+        <!-- <div class="btn">Control</div> -->
+        <!-- <div class="main-c" > -->
+        <!-- <div style="text-align:center"><div class="start-g">Start Gravity</div><div class="stop-g">zero gravity</div></div> -->
+        <!-- <div class="input-area"></div> -->
 
-<div class="c-box">
-<div class="btn">Control</div>
-<div class="main-c" >
-<div style="text-align:center"><div class="start-g">Start Gravity</div><div class="stop-g">zero gravity</div></div>
-<div class="input-area">
-<input type="range"  min="-3" max="3" step=".2" value="0" id="gravity-x" ></input>
-<input type="range"  min="-3" max="3" step=".2" value="1" id="gravity-y" ></input>
-</div>
-<br><br><br>
-<div style="text-align:center"><div class="close" >Close</div></div><br>
-</div>
-</div>
+        <!-- </div> -->
 
-<br><br>
-<div id="demo" style="text-align:center">
-<p style="text-align:center" id="wbox">
-<span v-for="a in message" 
-:style="{color: getColor()}" >{{a}}</span>
-</p>
-    <input  v-model="message" style="text-align:center" id="g-ip">
-</div>
-<br>
-<div style="text-align:center" class="g-btn">
-<button class="start-g" type="submit" id="grav" >START GRAVITY</button>
-<button class="stop-g" type="submit" id="grav">ZERO GRAVITY</button>
-
-
-</div>
-</div>
+        <!-- <div style="text-align:center"><div class="close" >Close</div></div><br> -->
+        <!-- </div>
+        </div> -->
 
         
-        <script src="gravity1.js"></script>
+        <div id="demo" style="text-align:center">
+
+            <p style="text-align:center" id="wbox">
+
+                <span class="test" v-for="a in message" :style="{color: getColor()}" >
+                   {{a}}
+                </span>
+
+            </p>
+
+            <input  v-model="message" style="text-align:center" id="g-ip">
+
+        </div>
+
+        
+        <div style="text-align:center" class="g-btn">
+            <div input="button" class="start-g" type="submit" id="grav" >
+                <div class="globe">
+        
+                    <div class ="circleGlobe">
+                      
+    
+                        <div class= "maps1"></div>
+                        <div class= "maps2"></div>
+                        <div class= "maps3"></div>
+                        <div class= "maps4"></div>
+                        <div class= "maps5"></div>
+                        <div class= "maps6"></div>
+                        <div class= "maps7"></div>
+                        <div class= "maps8"></div>
+                        <div class= "maps9"></div>
+                        <div class= "shadow"></div>
+                        <!-- <div class= "highlight"></div> -->
+                        
+                    </div>
+               
+    
+                 </div>
+    
+            </div>
+            <div input="button" class="stop-g" type="submit" id="grav">
+                <div class="moon">
+                
+                    <div class ="circleMoon">
+                        <div class ="circleHighLighter"></div>
+    
+                    <div class= "crater1"></div>
+                    <div class= "crater2"></div>
+                    <div class= "crater3"></div>
+                    <div class= "crater4"></div>
+                    <div class= "crater5"></div>
+                    <div class= "crater6"></div>
+                    <div class= "crater7"></div>
+                    <div class= "crater8"></div>
+                    <div class= "crater9"></div>
+
+     
+                    
+                    
+                    </div>
+    
+                </div>
+            </div>
+
+
+        </div>
+        <input type="hidden" value="0" id="gravity-x" ></input>
+        <input type="hidden"value="1" id="gravity-y" ></input>
+       
+
+                
+
+
+
+
+
+         <script src="gravity1.js"></script>
 
     </body>
 
