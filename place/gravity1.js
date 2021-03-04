@@ -16,17 +16,25 @@ var demo = new Vue({
       getRandomColor: ''
     },
     methods: {
-      getColor: function () {
       
-         var letters = '0123456789ABCDEF';
-         var color = '#';
-          for (var i = 0; i < 6; i++ ) {
-              color += letters[Math.floor(Math.random() * 14)];
-          }
-          return color;
+      getColor: 
+          function getRandomColor() {
+
+            var rletters = '0123456789ABCDEF'.split('');
+            
+            var rcolor = '#';
+            
+            for (var i = 0; i < 6; i++) {
+            
+            rcolor += rletters[Math.round(Math.random() *16)];
+            
+            }
+            
+            return rcolor;
+            
             }
           }
-     })
+  })
 
 
 $(document).ready(function() {

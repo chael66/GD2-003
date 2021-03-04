@@ -4,7 +4,8 @@
         <link src="../base/reset.css">
        <link rel = "stylesheet" type="text/css" href ="gravity1.css">
        <link rel="preconnect" href="https://fonts.gstatic.com">
-       <link href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39+Text&family=Reenie+Beanie&display=swap" rel="stylesheet">
+      
        <script src='https://vuejs.org/js/vue.min.js'></script>
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
      
@@ -18,6 +19,20 @@
     </head>
 
     <body>
+        
+            <h1 Id="motion-demo">HELLO!</h1>
+        
+      
+        <div class="orbits">
+            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="1000vh" height="1000vh" >
+                <circle class="orbit1"cx="0" cy="0" r="200" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.3" />
+                <circle class="orbit2"cx="0" cy="0" r="250" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.4" />
+                <circle class="orbit3"cx="0" cy="0" r="700"fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.5"  />
+                <circle class="orbit4"cx="0" cy="0" r="900"fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.2"  />
+                <circle class="orbit5"cx="0" cy="0" r="1500" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.5" />
+                <circle class="orbit6"cx="0" cy="0" r="2000" fill="none" stroke="#ffffff" stroke-width="1"stroke-opacity="0.6"  />
+            </svg>
+         </div>
 
         <div class="cursor" id="cursor"> 
        
@@ -69,91 +84,96 @@
             </div>
          </div>
 
-        <!-- <div class="c-box"> -->
-        <!-- <div class="btn">Control</div> -->
-        <!-- <div class="main-c" > -->
-        <!-- <div style="text-align:center"><div class="start-g">Start Gravity</div><div class="stop-g">zero gravity</div></div> -->
-        <!-- <div class="input-area"></div> -->
+ 
+        <div class="container">
+            <div id="demo" style="text-align:center">
 
-        <!-- </div> -->
-
-        <!-- <div style="text-align:center"><div class="close" >Close</div></div><br> -->
-        <!-- </div>
-        </div> -->
-
-        
-        <div id="demo" style="text-align:center">
-
-            <p style="text-align:center" id="wbox">
-
-                <span class="test" v-for="a in message" :style="{color: getColor()}" >
-                   {{a}}
-                </span>
-
-            </p>
-
-            <input  v-model="message" style="text-align:center" id="g-ip">
-
-        </div>
-
-        
-        <div style="text-align:center" class="btn">
-            <div input="button" class="start-g" type="submit" id="grav" >
-                <div class="globe">
-        
-                    <div class ="circleGlobe">
-                      
+                <p style="text-align:center" id="wbox">
     
-                        <div class= "maps1"></div>
-                        <div class= "maps2"></div>
-                        <div class= "maps3"></div>
-                        <div class= "maps4"></div>
-                        <div class= "maps5"></div>
-                        <div class= "maps6"></div>
-                        <div class= "maps7"></div>
-                        <div class= "maps8"></div>
-                        <div class= "maps9"></div>
-                        <div class= "shadow"></div>
-                        <!-- <div class= "highlight"></div> -->
-                        
-                    </div>
-               
+                    <span class="test" v-for="a in message" :style="{color: getColor()}" >
+                       {{a}}
+                    </span>
     
-                 </div>
+                </p>
+    
+                <input  v-model="message" style="text-align:center" id="g-ip">
     
             </div>
-            <div input="button" class="stop-g" type="submit" id="grav">
-                <div class="moon">
-                
-                    <div class ="circleMoon">
-                        <div class ="circleHighLighter"></div>
     
-                    <div class= "crater1"></div>
-                    <div class= "crater2"></div>
-                    <div class= "crater3"></div>
-                    <div class= "crater4"></div>
-                    <div class= "crater5"></div>
-                    <div class= "crater6"></div>
-                    <div class= "crater7"></div>
-                    <div class= "crater8"></div>
-                    <div class= "crater9"></div>
-
-     
-                    
-                    
-                    </div>
-    
+            
+            <div class="btn">
+                <div input="button" class="start-g" type="submit" id="grav" >
+                  
+                    <div class="globe">
+            
+                        <div class ="circleGlobe">
+                          
+        
+                            <div class= "maps1"></div>
+                            <div class= "maps2"></div>
+                            <div class= "maps3"></div>
+                            <div class= "maps4"></div>
+                            <div class= "maps5"></div>
+                            <div class= "maps6"></div>
+                            <div class= "maps7"></div>
+                            <div class= "maps8"></div>
+                            <div class= "maps9"></div>
+                            <div class= "shadow"></div>
+                            <!-- <div class= "highlight"></div> -->
+                            
+                        </div>
+                   
+        
+                     </div>
+        
                 </div>
-            </div>
-
-
-        </div>
-
-
-        <input type="hidden" value="0" id="gravity-x" ></input>
-        <input type="hidden"value="1" id="gravity-y" ></input>
+                <div input="button" class="stop-g" type="submit" id="grav">
+                    <div class="moon">
+                    
+                        <div class ="circleMoon">
+                            <div class ="circleHighLighter"></div>
+        
+                        <div class= "crater1"></div>
+                        <div class= "crater2"></div>
+                        <div class= "crater3"></div>
+                        <div class= "crater4"></div>
+                        <div class= "crater5"></div>
+                        <div class= "crater6"></div>
+                        <div class= "crater7"></div>
+                        <div class= "crater8"></div>
+                        <div class= "crater9"></div>
     
+         
+                        
+                        
+                        </div>
+        
+                    </div>
+                </div>
+    
+    
+            </div>
+    
+    
+            <input type="hidden" value="0" id="gravity-x" ></input>
+            <input type="hidden"value="1" id="gravity-y" ></input>
+        
+    
+            <audio autoplay loop>  
+                <source src="../sound/mars.mp3" type="audio/mp3">
+            </audio>
 
+      
+    
+    
+    
+    
+    
+    
+           
+    
+        </div>
+       
          <script src="gravity1.js"></script>
 
     </body>
