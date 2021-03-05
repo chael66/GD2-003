@@ -76,3 +76,8 @@ $(document).ready(function() {
 	});
 });
 
+
+// reference 
+//https://codepen.io/SaschaSigl/pen/VmPrwJ
+//https://codepen.io/agathaco/pen/zRwPjg
+//https://codepen.io/mayurbirle/pen/gWbvLE
