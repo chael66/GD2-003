@@ -12,7 +12,7 @@ $(document).mousemove(function(e){
 var demo = new Vue({
     el: '#demo',
     data: {
-      message: 'Type here',
+      message: 'Type Here! ',
       getRandomColor: ''
     },
     methods: {

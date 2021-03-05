@@ -40,7 +40,7 @@ offset-path: path("M20 0 H 1650 V 900 H 0 L 00 0 " );
 #demo{
   
   text-align: center;
-
+  margin-top: 10%;
 
 
 	/* margin-top:10%; */
@@ -59,15 +59,17 @@ outline: none;
 background: whitesmoke;
 border-color: transparent ;
 
-border-radius: 30%;
+
 margin-top: 5vh;
 z-index: 100;
+opacity: 0.6;
 }
 #demo input:focus{
 width: 400px;
 transition: all 1s;	
 border: solid 3px; 
 border-color: gray;
+opacity: 0.8;
 /* left: 35%; */
 }
 #wbox {
@@ -107,9 +109,9 @@ padding: 10px;
 
 
 .test{
-	font-size: 120px;
+	font-size: 80px;
   padding: 0;
-  margin: 0;
+
   color: aliceblue;
 }
 
